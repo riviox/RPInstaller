@@ -41,9 +41,9 @@ pip install -r requirements.txt
 python rpinstaller.py
 ```
 ## To Do
-[ ]Add resourcepack icon preview
-[ ] Download resourcepacks from the internet
-[ ]Implement auto-update from GitHub
+[]Add resourcepack icon preview
+[] Download resourcepacks from the internet
+[]Implement auto-update from GitHub
 
 
 ## Features
