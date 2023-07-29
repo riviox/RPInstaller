@@ -52,7 +52,7 @@ repo_path = "repo\\github"
 update_from_github(repo_url, repo_path)
 
 root = tk.Tk()
-root.title("Minecraft Resourcepack Installer")
+root.title("Resourcepack Installer")
 root.geometry("500x450")
 
 icon_path = "icon.ico"
