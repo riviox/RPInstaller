@@ -6,26 +6,29 @@ Minecraft Resourcepack Installer is a simple resource pack installer for Minecra
 
 To run the application, you need to have Python interpreter (version 3.x) installed along with a few additional modules. You can install them using pip:
 
+```
 pip install tkinter
-
+```
 
 ## Installation
 
 1. Clone the repository to your computer:
 
+```
 git clone https://github.com/your_username/Minecraft-Resourcepack-Installer.git
-
-css
-Copy code
+```
 
 2. Navigate to the project directory:
 
+```
 cd Minecraft-Resourcepack-Installer
+```
 
 3. Run the application:
 
+```
 python installer.py
-
+```
 
 ## Features
 
