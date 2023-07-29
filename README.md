@@ -12,6 +12,11 @@ pip install tkinter
 
 ## Installation
 
+1. Download latest RPInstaller.exe
+2. Run it
+
+or run from source ||you must have python 3.x installed!||
+
 1. Clone the repository to your computer:
 
 ```
