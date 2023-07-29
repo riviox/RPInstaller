@@ -5,15 +5,6 @@ from tkinter import filedialog
 import ctypes
 import git
 
-def update_from_github(repo_url, repo_path):
-    if os.path.exists(repo_path):
-        repo = git.Repo(repo_path)
-        origin = repo.remotes.origin
-        origin.fetch()
-        origin.pull()
-    else:
-        git.Repo.clone_from(repo_url, repo_path)
-
 def set_app_window_style():
     if os.name == "nt":
         app_id = "RPInstaller"
@@ -46,10 +37,6 @@ def install_resourcepack():
     else:
         status_label.config(text="Invalid source or destination path.", fg="#F44336")
 
-repo_url = "https://github.com/RivioxGaming/RPInstaller.git"
-repo_path = "repo\\github"
-
-update_from_github(repo_url, repo_path)
 
 root = tk.Tk()
 root.title("Resourcepack Installer")
@@ -91,8 +78,12 @@ install_button.pack(pady=15)
 status_label = tk.Label(root, text="", font=("Helvetica", 12), bg="#1E1E1E", fg="white")
 status_label.pack()
 
-made_by_label = tk.Label(root, text="Made by .riviox", font=("Helvetica", 10), bg="#1E1E1E", fg="white")
+
+made_by_label = tk.Label(root, text="Stable build\nMade by .riviox", font=("Helvetica", 10), bg="#1E1E1E", fg="white")
 made_by_label.pack(side=tk.BOTTOM)
+
+made_by_label = tk.Label(root, text="v1.0.1", font=("Helvetica", 10), bg="#1E1E1E", fg="white")
+made_by_label.pack(side=tk.LEFT)
 
 list_resourcepacks()
 
