@@ -29,7 +29,13 @@ git clone https://github.com/RivioxGaming/RPInstaller.git
 cd RPInstaller
 ```
 
-3. Run the application:
+3. Install `requirements.txt`
+
+```
+pip install -r requirements.txt
+
+```
+4. Run file
 
 ```
 python rpinstaller.py
