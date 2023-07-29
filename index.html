@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Minecraft Resourcepack Installer</title>
+    <title>RPInstaller</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Minecraft Resourcepack Installer</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#todo">To-Do</a></li>
+            </ul>
+        </nav>
+        <h1>RPInstaller - Resourcepack Installer</h1>
     </header>
     <main>
-        <p>Welcome to the Minecraft Resourcepack Installer!</p>
-        <p>Click the button below to download the installer.</p>
-        <a href="installer.py" download class="download-button">Download Installer</a>
+        <section id="home">
+            <h2>Welcome to RPInstaller - Minecraft Resourcepack Installer!</h2>
+            <p>RPInstaller is a user-friendly tool that allows you to easily install resourcepacks for Minecraft.</p>
+            <p>Whether you want to customize the visuals and sounds of your Minecraft world or try out new textures created by the community, RPInstaller has you covered.</p>
+            <p>Simply browse and select your desired resourcepack in the installer, and with just a click of a button, it will be installed and ready to use in your game.</p>
+            <p>Experience a modern and stylish dark-themed interface that enhances your resourcepack installation experience.</p>
+        </section>
+        <section id="download">
+            <p>Click the button below to download RPInstaller.</p>
+            <a href="rpinstaller.py" download class="download-button">Download RPInstaller</a>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Install Minecraft resourcepacks with ease</li>
+                <li>User-friendly interface for browsing and selecting resourcepacks</li>
+                <li>Dark theme for a modern and stylish look</li>
+                <li>Automatically lists installed resourcepacks</li>
+                <li>Instantly updates resourcepacks from GitHub repository</li>
+                <li>Displays status messages for successful and failed installations</li>
+            </ul>
+        </section>
+        <section id="todo">
+            <h2>To-Do</h2>
+            <ul>
+                <li>Add resourcepack icon preview</li>
+                <li>Download resourcepacks from the internet</li>
+                <li>Implement auto-update from GitHub</li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>Made by .riviox</p>
+        <p>Version: 1.0.0</p>
+        <p>License: GPL 2.0</p>
+        <p>GitHub Repository: <a href="https://github.com/riviox/RPInstaller" target="_blank">RPInstaller</a></p>
     </footer>
 </body>
 </html>
