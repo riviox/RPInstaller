@@ -16,7 +16,7 @@ def update_from_github(repo_url, repo_path):
 
 def set_app_window_style():
     if os.name == "nt":
-        app_id = "MyMinecraftResourcepackInstaller"
+        app_id = "RPInstaller"
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(app_id)
 
 def select_resourcepack():
