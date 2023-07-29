@@ -47,4 +47,4 @@ This project is created by .riviox.
 
 ## License
 
-This project is licensed under the GNU General Public License v2.0. For more informa
+This project is licensed under the GNU General Public License v2.0. For more information, see the [LICENSE](LICENSE) file.
