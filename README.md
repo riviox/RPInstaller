@@ -15,19 +15,19 @@ pip install tkinter
 1. Clone the repository to your computer:
 
 ```
-git clone https://github.com/your_username/Minecraft-Resourcepack-Installer.git
+git clone https://github.com/RivioxGaming/RPInstaller.git
 ```
 
 2. Navigate to the project directory:
 
 ```
-cd Minecraft-Resourcepack-Installer
+cd RPInstaller
 ```
 
 3. Run the application:
 
 ```
-python installer.py
+python rpinstaller.py
 ```
 
 ## Features
