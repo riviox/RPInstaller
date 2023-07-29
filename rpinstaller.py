@@ -5,14 +5,6 @@ from tkinter import filedialog
 import ctypes
 import git
 
-def update_from_github(repo_url, repo_path):
-    if os.path.exists(repo_path):
-        repo = git.Repo(repo_path)
-        origin = repo.remotes.origin
-        origin.fetch()
-        origin.pull()
-    else:
-        git.Repo.clone_from(repo_url, repo_path)
 
 def set_app_window_style():
     if os.name == "nt":
@@ -26,7 +18,7 @@ def select_resourcepack():
 
 def list_resourcepacks():
     resourcepacks_list.delete(0, tk.END)
-    resourcepacks_folder = os.path.join(os.path.expanduser("~"), "AppData", "Roaming", ".minecraft", "resourcepacks")
+    resourcepacks_folder = os.path.join(os.path.expanduser("~"), ".minecraft", "resourcepacks")
     if os.path.exists(resourcepacks_folder):
         resourcepacks = os.listdir(resourcepacks_folder)
         for pack in resourcepacks:
@@ -34,8 +26,8 @@ def list_resourcepacks():
 
 def install_resourcepack():
     selected_pack = resourcepacks_list.get(resourcepacks_list.curselection())
-    source_path = os.path.join(os.path.expanduser("~"), "AppData", "Roaming", ".minecraft", "resourcepacks", selected_pack)
-    destination_path = os.path.join(os.path.expanduser("~"), "AppData", "Roaming", ".minecraft", "resourcepacks")
+    source_path = os.path.join(os.path.expanduser("~"), ".minecraft", "resourcepacks", selected_pack)
+    destination_path = os.path.join(os.path.expanduser("~"), ".minecraft", "resourcepacks")
     
     if os.path.exists(source_path) and os.path.exists(destination_path):
         try:
@@ -46,8 +38,6 @@ def install_resourcepack():
     else:
         status_label.config(text="Invalid source or destination path.", fg="#F44336")
 
-repo_url = "https://github.com/RivioxGaming/RPInstaller.git"
-repo_path = "repo\\github"
 
 update_from_github(repo_url, repo_path)
 
